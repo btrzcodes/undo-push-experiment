@@ -8,4 +8,3 @@ Testing how can I revert an ooopps-push into a develop branch without breaking a
 - Merged with the rollback branch solution.
 
 Why this way? If you prefer "modularize" the commits fixed in a different branch in order to take care of the develop branch and make this as a "hotfix" of the commits.
-
