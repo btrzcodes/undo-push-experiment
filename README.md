@@ -14,3 +14,5 @@ Testing how can I revert an ooopps-push into a develop branch without breaking a
 - Nope. Not working either, same untraked files for merging error.
 
 - It says I have to move or remove them... let's move the conflict to another folder!
+
+- Yep, this worked! Now I just have to manually fix the merge conflict done by my rollback pulling and that's it!
