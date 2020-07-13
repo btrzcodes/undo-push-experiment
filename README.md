@@ -2,10 +2,10 @@
 
 Testing how can I revert an ooopps-push into a develop branch without breaking anything
 
-### Possible fix approaches at branches:
+### Possible fix approaches at elegant-merge branch:
 
-- dev-copy branch: develop branch forked from an specific sha (history has no errored commits). Blank canvas to restart saving all correct commits.
-- develop-reverted branch: forked branch with no errored commits + local corrections (before pushing the develop-reverted to remote for the first time). Cleanest commits log but missing commits (even if they are errors).
-- rollback branch: forked with errors. Then git reset to the OK commit. Pull from remote (will have fast-fowarded errors that can be solved by moving into a folder the untraked gitignore files) and manually fix the conficts.
+- Forked from errored-commit develop head. This is going to emulate develop branch (as in this repo develop branch is the one with the problem so we dont want to solve it there.)
+- Merged with the rollback branch solution.
 
-More details at each branches README.
+Why this way? If you prefer "modularize" the commits fixed in a different branch in order to take care of the develop branch and make this as a "hotfix" of the commits.
+
